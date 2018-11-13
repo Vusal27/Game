@@ -1,0 +1,71 @@
+.game__hidden {
+    position: absolute;
+    height: 12%;
+    width: 5%;
+    &_pos1 {
+    top: 39%;
+    left: 20%;
+    }
+    &_pos2 {
+        top: 45%;
+        left: 50%;
+    }
+    &_pos3 {
+        top: 61%;
+        left: 26%;
+    }
+    &_pos4 {
+        top: 42.5%;
+        right: 8%;
+    }
+    &-wrap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    &-pic {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        &_3 {
+            transform: rotate(15deg);
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 48% 55%, 0 58%);
+        }
+        &_4 {
+            transform: rotate(30deg);
+            clip-path: polygon(0 45%, 50% 75%, 95% 30%, 100% 100%, 0 100%);
+        }
+    }
+}
+
+@keyframes disappearance {
+    0% {
+        top: 0;
+        right: 0;
+    }
+    20% {
+        transform: scale(1.3);
+        top:-30px;
+        right:0;
+        height: 80px;
+    }
+    100% {
+        top:150vh;
+        height: 0;
+    }
+}
+// @keyframes disappearanceParf {
+//     0% {
+//         top: 60%;
+//         right: 0;
+//     }
+//     20% {
+//         top:0;
+//         right:0;
+//         height: 80px;
+//     }
+//     100% {
+//         top:150vh;
+//         height: 0;
+//     }
+// }

@@ -1,0 +1,35 @@
+.game__hidden {
+    &_pos5 {
+        top: 50%;
+        right: 15%;
+    }
+    &_pos6 {
+        top: 60%;
+        left: 27%;
+    }
+    &_pos7 {
+        top: 13%;
+        left: 26%;
+    }
+    &_pos8 {
+        top: 49.3%;
+        left: 59%;
+    }
+    &-pic {
+        &_5 {
+            transform: rotate(-55deg);
+            clip-path: polygon(0 0, 100% 0, 100% 22%, 0 75%);
+            @include laptop() {
+                clip-path: polygon(0 0, 100% 0, 100% 30%, 0 75%);
+            }
+        }
+        &_6 {
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 40% 60%, 0 60%);
+        }
+        &_8 {
+            height: 90%;
+            width: 90%;
+            clip-path: polygon(0 0, 100% 0%, 100% 45%, 0% 45%);
+        }
+    }
+}

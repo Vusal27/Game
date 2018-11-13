@@ -1,0 +1,37 @@
+.game__hidden {
+    &_pos9 {
+        top: 57%;
+        left: 66.5%;
+    }
+    &_pos10 {
+        top: 46%;
+        left: 50%;
+    }
+    &_pos11 {
+        top: 53%;
+        left: 32%;
+    }
+    &_pos12 {
+        top: 75%;
+        left: 55%;
+    }
+    &-pic {
+        &_9 {
+            clip-path: polygon(0 0, 50% 0, 50% 80%, 0 80%);
+            height: 90%;
+        }
+        &_11 {
+            height: 95%;
+            clip-path: polygon(58% 15%, 100% 10%, 100% 100%, 58% 80%);
+        }
+        &_12 {
+            height: 90%;
+            transform: scaleX(-1);
+        }
+    }
+}
+.hidden {
+    animation: disappearance 3s;
+    animation-fill-mode: forwards;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
